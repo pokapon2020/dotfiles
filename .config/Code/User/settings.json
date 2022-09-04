@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "workbench.startupEditor": "none",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "window.menuBarVisibility": "toggle",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "editor.fontFamily": "'HackGen Console NFJ','Droid Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 18
+}
