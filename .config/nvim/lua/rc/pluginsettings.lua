@@ -14,5 +14,3 @@ if status_ok then
   }
 end
 
-vim.cmd[[colorscheme dracula]]
-
