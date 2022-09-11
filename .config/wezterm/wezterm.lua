@@ -1,15 +1,29 @@
 local wezterm = require 'wezterm';
 local act = wezterm.action
 
-local defaultProgramArgs = {};
+local defaultProgramArgs;
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  defaultProgramArgs = wezterm.default_prog;
+  local wslDistroName = 'Ubuntu-22.04'; 
+  defaultProgramArgs = {
+    'wsl',
+    '-u',
+    'tpri',
+    '-d',
+    wslDistroName,
+    '--cd',
+    '~',
+    '-e',
+    '/bin/bash',
+    '-c',
+    '/usr/libexec/nslogin'
+  };
 elseif wezterm.target_triple == 'x86_64-apple-darwin' then
   defaultProgramArgs = wezterm.default_prog;
 elseif wezterm.target_triple == 'x86_64-unknown-linux-gnu' then
-  defaultProgramArgs[1] = '/usr/bin/fish';
-  defaultProgramArgs[2] = '-l';
+  defaultProgramArgs = {
+    '/usr/bin/fish', '-l'
+  };
 end
 
 return {
