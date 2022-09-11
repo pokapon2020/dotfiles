@@ -14,7 +14,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
     '--cd',
     '~',
     '-e',
-    '/bin/bash',
+    '/usr/bin/fish',
     '-c',
     '/usr/libexec/nslogin'
   };
