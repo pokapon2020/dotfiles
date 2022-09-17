@@ -1,21 +1,22 @@
-[aws]
-style = "bold #ffb86c"
+format = """
+$time$directory$golang$nodejs$python$dart$rust$deno$ruby$cmd_duration
+$character"""
 
-[character]
-error_symbol = "[λ](bold #ff5555)"
-success_symbol = "[λ](bold #50fa7b)"
+right_format = """
+$git_status$git_branch"""
 
-[cmd_duration]
-style = "bold #f1fa8c"
+[time]
+disabled = false
+format = "[$time]($style) "
+style = 'bold cyan'
 
 [directory]
+truncate_to_repo = false
+format = "[$path]($style)[$read_only]($read_only_style) "
 style = "bold #50fa7b"
-
-[git_branch]
-style = "bold #ff79c6"
-
-[git_status]
-style = "bold #ff5555"
+read_only_style = 'bold red'
+home_symbol = ' ~'
+truncation_length = 0
 
 [hostname]
 style = "bold #bd93f9"
@@ -23,3 +24,48 @@ style = "bold #bd93f9"
 [username]
 format = "[$user]($style) on "
 style_user = "bold #8be9fd"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bold #ff79c6"
+symbol = "  "
+disabled = false
+
+[git_status]
+style = "bold #ff5555"
+disabled = false
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "bold #f1fa8c"
+
+# languages
+[aws]
+style = "bold #ffb86c"
+
+[golang]
+format = "[$symbol($version )]($style)"
+symbol = "ﳑ "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[python]
+format = "[$symbol($version )]($style)"
+
+[dart]
+format = "[$symbol($version )]($style)"
+
+[rust]
+format = "[$symbol($version )]($style)"
+
+[deno]
+format = "[$symbol($version )]($style)"
+
+[ruby]
+format = "[$symbol($version )]($style)"
+
+[character]
+success_symbol = "[-❯](bold #ff5555)"
+error_symbol = "[-❯](bold #50fa7b)"
+

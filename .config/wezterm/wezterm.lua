@@ -37,7 +37,7 @@ return {
   --color_scheme = 'Dracula',
   color_scheme = 'Dracula (Official)',
 	tab_bar_at_bottom = false,
-  use_fancy_tab_bar = false,
+  use_fancy_tab_bar = true,
   window_background_opacity = 1.0,
   text_background_opacity = 1.0,
   use_ime = true,
