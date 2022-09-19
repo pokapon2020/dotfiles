@@ -18,6 +18,7 @@ link_to_homedir() {
   if [[ "$HOME" != "$dotdir" ]];then
     for f in $dotdir/.??*; do
       [[ `basename $f` == ".git" ]] && continue
+      [[ `basename $f` == ".config.template" ]] && continue
       if [[ -L "$HOME/`basename $f`" ]];then
         command rm -f "$HOME/`basename $f`"
       fi
@@ -45,6 +46,9 @@ while [ $# -gt 0 ];do
   esac
   shift
 done
+
+
+#fish -c "curl -sL git.io/fisher | source && fisher update"
 
 link_to_homedir
 git config --global include.path "~/.gitconfig_shared"
