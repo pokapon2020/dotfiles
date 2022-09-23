@@ -72,6 +72,12 @@ return packer.startup(function(use)
     },
     tag = 'nightly'
   }
+  use({
+    'simrat39/rust-tools.nvim'
+  })
+  use({
+    'mfussenegger/nvim-dap'
+  })
   use 'Mofiqul/dracula.nvim'
 end)
 
