@@ -1,3 +1,5 @@
+command_timeout = 10000
+
 format = """
 $time$directory$golang$nodejs$python$dart$rust$deno$ruby$cmd_duration
 $character"""
