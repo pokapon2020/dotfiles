@@ -1,1 +1,43 @@
 # dotfiles
+
+My PC wants any software.
+
+- Common
+  - asdf-vm
+  - rust
+  - tmux
+  - neovim
+  - starship
+  - nushell
+  - nodejs
+  - lsd(Rust)
+  - fd(Rust)
+  - bat(Rust)
+  - ripgrep(Rust)
+  - fzf
+  - HackGen fonts(fonts)
+- Common(GUI)
+  - Vivaldi
+  - Alacritty
+- Windows
+  - Winget
+  - PowerToys
+  - gsudo
+  - Sakura Editor
+  - Winmerge
+  - 7-zip
+  - Visual Studio
+  - Steam
+- Linux
+  - Arch
+    - sway
+      - waybar
+      - wrofi
+    - fxcit
+    - docker
+    - docker-compose
+- Mac
+  - ipad
+    - ShellFish
+- Android
+  - Termius
