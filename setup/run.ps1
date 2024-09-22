@@ -1,1 +1,1 @@
-Write-Output "Hello."
+Write-Output "Hello World."
