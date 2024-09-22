@@ -15,6 +15,6 @@ jobs:
         platform: [windows-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-      - uses: actions/checout@v4
+      - uses: actions/checkout@v4
       - name: Run install script
         run: ./setup/run.ps1
