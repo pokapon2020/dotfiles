@@ -1,0 +1,25 @@
+name: GitHub Actions Demo
+
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - /
+      - !README.md
+      - !.gitignore
+      - !.gitattributes
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checout@v4
+      - name: Run install script
+        run: ./setup/run.ps1
