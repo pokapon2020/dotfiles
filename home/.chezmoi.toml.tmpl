@@ -1,2 +1,27 @@
+################################################
+# Operation
+################################################
+
+# Format for data output, either `json` or `yaml`
+format = "json"
+# Mode in target dir, either `file` or `symlink`
+mode = "file"
+
 [edit]
     command = "nvim"
+
+[diff]
+  pager = "delta --side-by-side"
+
+[merge]
+  command = "nvim"
+  args = [
+    "-d",
+    "{{ "{{" }} .Destination {{ "}}" }}",
+    "{{ "{{" }} .Source {{ "}}" }}",
+    "{{ "{{" }} .Target {{ "}}" }}",
+  ]
+
+[update]
+  # Update submodules recursively
+  recurseSubmodules = true
