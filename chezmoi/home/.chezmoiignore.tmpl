@@ -1,0 +1,25 @@
+{{ if ne .chezmoi.os "windows" }}
+.chezmoiscripts/windows/**
+Documents
+AppData/Local/nvim/
+{{ else }}
+.bash_aliases
+.config/ghostty
+.config/git/cookies
+.config/psql
+.config/readline
+.config/tmux
+.config/nvim
+.gnupg
+.gnupg/**
+.inputrc
+.oh-my-zsh
+.oh-my-zsh/**
+.p10k.zsh
+.ssh/id_rsa
+.ssh/id_rsa.pub
+.tmux.conf
+.zprofile
+.zshrc
+{{ end }}
+

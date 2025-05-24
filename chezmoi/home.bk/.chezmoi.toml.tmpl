@@ -1,14 +1,20 @@
 ################################################
 # Operation
 ################################################
+sourceDir = "~/workspace/dotfiles"
 
 # Format for data output, either `json` or `yaml`
 format = "json"
 # Mode in target dir, either `file` or `symlink`
 mode = "file"
 
+{{ if eq .chezmoi.os "windows" }}
+[cd]
+  command = "powershell"
+{{ end }}
+
 [edit]
-    command = "nvim"
+  command = "nvim"
 
 [diff]
   command = "delta"

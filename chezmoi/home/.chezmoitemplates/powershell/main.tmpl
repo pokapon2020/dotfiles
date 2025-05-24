@@ -1,0 +1,10 @@
+#Get-Host
+
+# 読み込みたいps1スクリプトの保存場所
+#$psdir="C:\Users\xxxx\Documents\WindowsPowerShell\autoload"
+# 保存場所にある全てのps1スクリプトを読み込む
+#Get-ChildItem "${psdir}\*.ps1" | %{.$_}
+
+# Starchip config
+Invoke-Expression (&starship init powershell)
+
