@@ -1,0 +1,16 @@
+{{ if eq .chezmoi.os "windows" }}
+AppData/Local/nvim/lazy-lock.json
+{{ end }}
+
+{{ if ne .chezmoi.os "darwin"}}
+Library/Applicaion Support/App/file.conf
+{{ end }}
+{{ if ne .chezmoi.os "linux" }}
+.config/zellij/
+{{ end }}
+{{ if ne .chezmoi.os "windows" }}
+AppData/
+Documents/
+.wslconfig
+{{ end }}
+

@@ -1,0 +1,2 @@
+Install-Module -Name PSFzf -scope currentUser
+Install-Module -Name ZLocation -scope currentUser

@@ -1,0 +1,48 @@
+[general]
+#working_directory = "C:\\Users\\toriyabe"
+working_directory = "C:\\Users\\AJyVW"
+#working_directory = "~"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 16.0
+offset = { x = 1, y = 0 }
+glyph_offset = { x = 0, y = 1 }
+
+[font.normal]
+family = "PlemolJP Console NF"
+style = "Text"
+
+[font.bold]
+family = "PlemolJP Console NF"
+style = "SemiBold"
+
+[font.italic]
+family = "PlemolJP Console NF"
+style = "Text Italc"
+
+[font.bold_italic]
+family = "PlemolJP Console NF"
+style = "SemiBold Italic"
+
+[terminal]
+#shell = "wsl.exe -d Ubuntu --cd ~ bash -ic zellij"
+#shell = "pwsh.exe --wd ~"
+#shell = "C:\\Windows\\system32\\cmd.exe /K cd %USERPROFILE%"
+shell = "pwsh.exe --NoLogo"
+
+[window]
+#startup_mode = "Maximized"
+dimensions = { columns = 120, lines = 30 }
+padding = { x = 10, y = 1 }
+opacity = 0.90
+
+# [cursor]
+# style = "Beam"
+
+[scrolling]
+history = 100000
+multiplier = 3
+

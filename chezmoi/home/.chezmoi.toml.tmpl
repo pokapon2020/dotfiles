@@ -1,10 +1,14 @@
-sourceDir = "~/workspaces/dotfiles"
+sourceDir = "~/workspace/.dotfiles/chezmoi"
 
-{{ if eq .chezmoi.os "windows" }}
 [cd]
-  command = "powershell"
+{{ if eq .chezmoi.os "windows" }}
+command = "pwsh.exe"
 {{ end }}
 
 [edit]
-  command = "nvim"
-
+{{ if eq .chezmoi.os "windows" }}
+command = "hx"
+{{ end }}
+{{ if ne .chezmoi.os "windows" }}
+command = "vim"
+{{ end }}

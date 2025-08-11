@@ -1,0 +1,6 @@
+[wsl2]
+memory=6GB
+swap=8GB
+processors=2
+defaultVhdSize=33554432000
+
