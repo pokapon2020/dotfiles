@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
-    <LogonCommand>
-        <Command>cmd /S /C "start powershell -c "cd ~\Downloads; $jobs = 'https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.0', 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx', 'https://github.com/microsoft/winget-cli/releases/download/v1.6.3482/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' | %{ Start-Job -ArgumentList $_ { param($url); cd ~\Downloads; curl.exe -LO $url } }; Set-WinHomeLocation -GeoID 122; Set-Culture -CultureInfo ja-JP; Wait-Job $jobs; Rename-Item .\2.7.0 -NewName Microsoft.UI.Xaml.2.7.0.zip; Expand-Archive -LiteralPath .\Microsoft.UI.Xaml.2.7.0.zip; Add-AppxPackage -Path .\Microsoft.UI.Xaml.2.7.0\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx -ErrorAction SilentlyContinue; Add-AppxPackage -Path .\Microsoft.VCLibs.x64.14.00.Desktop.appx; Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle;""</Command>
-    </LogonCommand>
-</Configuration>
