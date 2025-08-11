@@ -1,7 +1,5 @@
 [general]
-#working_directory = "C:\\Users\\toriyabe"
-working_directory = "C:\\Users\\AJyVW"
-#working_directory = "~"
+working_directory = "{{- .chezmoi.homeDir }}"
 
 [env]
 TERM = "xterm-256color"
@@ -35,9 +33,9 @@ shell = "pwsh.exe --NoLogo"
 
 [window]
 #startup_mode = "Maximized"
-dimensions = { columns = 120, lines = 30 }
+dimensions = { columns = 110, lines = 30 }
 padding = { x = 10, y = 1 }
-opacity = 0.90
+opacity = 0.98
 
 # [cursor]
 # style = "Beam"
