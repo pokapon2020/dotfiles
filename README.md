@@ -1,4 +1,3 @@
 # dotfiles
 
-Hello world.
-
+Hello dotfiles. I use Chezmoi to manage my dotfiles.
