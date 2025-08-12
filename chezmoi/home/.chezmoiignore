@@ -1,5 +1,6 @@
 {{ if eq .chezmoi.os "windows" }}
 AppData/Local/nvim/lazy-lock.json
+Documents/WindowsPowerShell/
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin"}}
