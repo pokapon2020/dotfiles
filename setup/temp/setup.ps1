@@ -47,7 +47,7 @@ if ($installList -eq $null) {
   Write-Host "sakura is already installed."
 }
 
-winget install `
+winget install --source winget -e --id `
  Microsoft.PowerToys `
  Microsoft.WindowsTerminal `
  Microsoft.VisualStudioCode `
@@ -62,4 +62,4 @@ winget install `
  twpayne.chezmoi `
  Volta.Volta `
  Docker.DockerDesktop `
- --source winget
+ Microsoft.Office

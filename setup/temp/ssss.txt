@@ -1,2 +1,4 @@
-Install-Module -Name PSFzf -scope currentUser
-Install-Module -Name ZLocation -scope currentUser
+Install-Module -Scope CurrentUser -Name PSFzf
+Install-Module -Scope CurrentUser -Name ZLocation
+Install-Module -Scope CurrentUser -Name VirtualDesktop
+Install-Module -Scope CurrentUser -Name Pester -Force
