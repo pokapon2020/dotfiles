@@ -1,0 +1,4 @@
+pwsh.exe --wd $(/mnt/c/WINDOWS/system32/cmd.exe /c 'SET /P X=%USERPROFILE%<NUL' 2>/dev/null)
+cp -p workspace/TNR2-BE/.temp/report/* /mnt/c/Users/toriyabe/workspace/_inbox/
+sudo rm -fr workspace/TNR2-BE/.temp/report/*
+

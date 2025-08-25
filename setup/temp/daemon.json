@@ -1,0 +1,14 @@
+{
+  "containerd": "/run/containerd/containerd.sock",
+  "hosts": [
+    "fd://",
+    "unix:///var/run/docker.sock",
+    "tcp://127.0.0.1:2375"
+  ],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100k",
+    "max-file": "3"
+  }
+}
+
