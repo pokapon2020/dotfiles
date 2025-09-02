@@ -6,6 +6,7 @@
 alias ls='lsd --group-dirs=first -N'
 alias ll='ls -alF'
 alias la='ls -A'
+alias lt='ls --tree --depth 2'
 alias l='ls -F'
 
 if [ -f ~/.bash_aliases ]; then
