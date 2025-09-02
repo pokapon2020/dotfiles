@@ -1,0 +1,16 @@
+#
+# .bashrc
+#
+[ -z "$PS1" ] && return
+
+alias ls='lsd --group-dirs=first -N'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -F'
+
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
+eval eval -- "$(/usr/sbin/starship init bash --print-full-init)"
+
